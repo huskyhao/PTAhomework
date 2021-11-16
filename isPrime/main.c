@@ -1,15 +1,11 @@
 #include<stdio.h>
 
 void printFactor( int, int );
-
-int main()
-{
+int main() {
     int a,b,i ;
-
-    scanf( "%d%d", &a, &b );
+    scanf("%d%d", &a, &b );
     for( i = a ; i <= b ; i++ )
         printFactor( i , 1 ) ;
-
     return 0;
 }
 int isPrime(int n) {
