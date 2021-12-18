@@ -26,7 +26,7 @@ void input(char **st,int n) {
     for(i = 0; i < n; i++) {
         pt = s_gets(temp,MAX);
         len = (int )strlen(pt);
-        st[i] = (char *) malloc(sizeof (char) * len + 1);
+        st[i] = (char *) malloc(sizeof (char) * (len + 1));
         strcpy(st[i],temp);
     }
 }
