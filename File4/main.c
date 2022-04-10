@@ -60,10 +60,10 @@ int isDirtyWord(char* str,char vocabulary[10][10],int len) {
     int ret = -1;
     char temp[10];//用来暂存单词以用strcmp函数
     int vocabulary_len;
-    for(i = 0; i <= len; i++) {
+    for(i = 0; i < len; i++) {
         //最外层是用来遍历和谐词汇的二维数组的
         vocabulary_len = (int )strlen(vocabulary[i]);
-        for(j = 0; j < vocabulary_len ; j++) {
+        for(j = 0; j < vocabulary_len; j++) {
             temp[j] = str[j];
             if(str[j] == '\0') {
                 break;
